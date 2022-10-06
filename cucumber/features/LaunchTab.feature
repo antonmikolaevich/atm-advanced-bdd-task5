@@ -1,8 +1,8 @@
 Feature: Launch Tab
 
-    Background:
-        Given I login
-        Then Element "Left Side Bar > Launch Tab" should be visible
+   # Background:
+    #    Given I login
+     #   Then Element "Left Side Bar > Launch Tab" should be visible
 
 
     @test
