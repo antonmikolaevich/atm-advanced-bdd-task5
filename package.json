@@ -1,0 +1,40 @@
+{
+  "name": "cucumber-program-advance-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --profile debug",
+    "lint": "eslint .",
+    "lint:outputTable": "eslint . --format table",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint . --fix --color --format table"
+    ]
+  },
+  "author": "Anton_Rak",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.6.0",
+    "@wdio/cli": "^7.25.1",
+    "@wdio/cucumber-framework": "^7.25.1",
+    "@wdio/local-runner": "^7.25.1",
+    "@wdio/spec-reporter": "^7.25.1",
+    "chromedriver": "^106.0.1",
+    "eslint": "^8.24.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "wdio-chromedriver-service": "^8.0.0"
+  },
+  "dependencies": {
+    "@cucumber-e2e/memory2": "^1.0.0",
+    "@cucumber-e2e/po2": "^1.0.4",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "chai": "^4.3.6",
+    "eslint-formatter-table": "^7.32.1"
+  }
+}
